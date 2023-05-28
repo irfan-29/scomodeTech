@@ -11,7 +11,7 @@
 
   <nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-      <a href="/home" class="top" style="text-decoration: none;  padding-right: 12px;">
+      <a href="./index.html" class="top" style="text-decoration: none;  padding-right: 12px;">
         <img src="images/logo.png" style="height: 55px; color: white; float: left; padding-right: 5px;">
       </a>
       <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -20,14 +20,13 @@
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a class="nav-link" aria-current="page" href="/">ABOUT US</a>
+            <a class="nav-link" aria-current="page" href="./about.html">ABOUT US</a>
           </li>
-
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+          <li class="nav-item">
+            <a class="nav-link" href="#industry">
               INDUSTRIES
             </a>
-            <ul class="dropdown-menu">
+            <!-- <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="/">Telecom</a></li>
               <li><a class="dropdown-item" href="/">Power</a></li>
               <li><a class="dropdown-item" href="/">Mining</a></li>
@@ -35,25 +34,26 @@
               <li><a class="dropdown-item" href="/">Retail</a></li>
               <li><a class="dropdown-item" href="/">Oil & Gas</a></li>
               <li><a class="dropdown-item" href="/">Agri IOT</a></li>
-            </ul>
+            </ul> -->
           </li>
 
           <li class="nav-item">
-            <a class="nav-link" href="/">TECHNOLOGY</a>
+            <a class="nav-link" href="#technology">TECHNOLOGIES</a>
           </li>
-          <li class="nav-item dropdown">
-            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              PRODUCTS
-            </a>
-            <ul class="dropdown-menu">
+          <li class="nav-item">
+          <li class="nav-item">
+            <a class="nav-link" href="./products.html">PRODUCTS</a>
+          </li>
+
+          <!-- <ul class="dropdown-menu">
               <li><a class="dropdown-item" href="/">RTMS</a></li>
               <li><a class="dropdown-item" href="/">TMS</a></li>
               <li><a class="dropdown-item" href="/">BMS</a></li>
               <li><a class="dropdown-item" href="/">RobotiX & TactiX</a></li>
-            </ul>
+            </ul> -->
           </li>
           <li class="nav-item">
-            <a class="nav-link" href="/">CONTACT US</a>
+            <a class="nav-link" href="#footer">CONTACT US</a>
           </li>
 
         </ul>
@@ -91,85 +91,43 @@
 
 
 
-  <section class="carousel">
+  <section id="industry">
     <h1>INDUSTRIES</h1>
-
-
-
-    <!-- <div class="industries">
-      <figure>
-        <img src="images/telecom.jpeg" alt="Mountains">
-        <figcaption>TELECOM</figcaption>
-      </figure>
-      <figure>
-        <img src="images/mining.jpg" alt="Mountains">
-        <figcaption>MINING</figcaption>
-      </figure>
-      <figure>
-        <img src="images/power.jpeg" alt="Mountains">
-        <figcaption>POWER</figcaption>
-      </figure>
-      <figure>
-        <img src="images/smart_city.jpeg" alt="Mountains">
-        <figcaption>SMART CITY</figcaption>
-      </figure>
-      <figure>
-        <img src="images/retail.jpg" alt="Mountains">
-        <figcaption>RETAIL</figcaption>
-      </figure>
-    </div> -->
-
-
-
-    <div class="carousel__container">
-      <div class="carousel-item">
-        <img class="carousel-item__img" src="images/telecom.jpeg" alt="people" />
-        <div class="carousel-item__details">
-          <h5 class="carousel-item__details--title">TELECOM</h5>
-        </div>
+    <div class="industry-container">
+      <div class="ind">
+        <img class="ind-img" src="images/telecom.jpeg" />
+        <h5 class="ind-text">TELECOM</h5>
       </div>
-      <div class="carousel-item">
-        <img class="carousel-item__img" src="images/power.jpeg" alt="people" />
-        <div class="carousel-item__details">
-          <h5 class="carousel-item__details--title">POWER</h5>
-        </div>
+      <div class="ind">
+        <img class="ind-img" src="images/power.jpeg" />
+        <h5 class="ind-text">POWER</h5>
       </div>
-      <div class="carousel-item">
-        <img class="carousel-item__img" src="images/mining.jpg" alt="people" />
-        <div class="carousel-item__details">
-          <h5 class="carousel-item__details--title">MINING</h5>
-        </div>
+      <div class="ind">
+        <img class="ind-img" src="images/mining.jpg" />
+        <h5 class="ind-text">MINING</h5>
       </div>
-      <div class="carousel-item">
-        <img class="carousel-item__img" src="images/smart_city.jpeg" alt="people" />
-        <div class="carousel-item__details">
-          <h5 class="carousel-item__details--title">SMART CITY</h5>
-        </div>
+      <div class="ind">
+        <img class="ind-img" src="images/smart_city.jpeg" />
+        <h5 class="ind-text">SMART CITY</h5>
       </div>
-      <div class="carousel-item">
-        <img class="carousel-item__img" src="images/retail.jpg" alt="people" />
-        <div class="carousel-item__details">
-          <h5 class="carousel-item__details--title">RETAIL</h5>
-        </div>
+      <div class="ind">
+        <img class="ind-img" src="images/retail.jpg" />
+        <h5 class="ind-text">RETAIL</h5>
       </div>
     </div>
   </section>
 
 
 
-  <section class="tech">
+  <section id="technology">
     <h1>TECHNOLOGIES</h1>
     <h3>Synchronized Control and Monitoring of Devices Platform.</h3>
-    <p>A fully configurable middleware IOIT Operating system delivered as a platform, enabling a variety of IOT devices to get connected with standard or customized protocols, codecs and standards with utmost data handling efficiency and accuracy.
+    <p>A fully configurable middleware IOiT Operating system delivered as a platform, enabling a variety of IOT devices to get connected with standard or customized protocols, codecs and standards with utmost data handling efficiency and accuracy.
     </p>
-
-
     <video width="100%" controls>
       <source src="videos/scomode.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
-
-
   </section>
 
 
@@ -315,52 +273,29 @@
       </div>
    -->
 
-  <footer class="animated-bottom pt-5 pb-3">
+  <footer id="footer" class="animated-bottom pt-5 pb-3">
     <div class="row" style="width: 100%;">
-      <div class="col-lg-2 col-md-6 col-sm-12 mb-3">
-        <h5>TECHNOLOGY</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-1"><a href="#" class="foot-link nav-link p-0 text-body-secondary">Scomode</a></li>
-        </ul>
+
+      <div class="col-lg-8 col-md-12 mb-3" style="width: 100vh; position: relative; bottom: 15px;">
+        <h5>CONTACT US</h5>
+        <p style="font-weight: 600;">India</p>
+        <p>#46, ATT Colony, Coimbatore. TN – 641 018.<br>T: +91 6383308918<br>E: info@scomodetech.com</p>
       </div>
 
-      <div class="col-lg-2 col-md-6 col-sm-12 mb-3">
-        <h5>INDUSTRIES</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-1"><a href="#" class="foot-link nav-link p-0 text-body-secondary">Telecom</a></li>
-          <li class="nav-item mb-1"><a href="#" class="foot-link nav-link p-0 text-body-secondary">Power</a></li>
-          <li class="nav-item mb-1"><a href="#" class="foot-link nav-link p-0 text-body-secondary">Mining</a></li>
-          <li class="nav-item mb-1"><a href="#" class="foot-link nav-link p-0 text-body-secondary">Smart Cities</a></li>
-          <li class="nav-item mb-1"><a href="#" class="foot-link nav-link p-0 text-body-secondary">Retail</a></li>
-          <li class="nav-item mb-1"><a href="#" class="foot-link nav-link p-0 text-body-secondary">Oil & Gas</a></li>
-          <li class="nav-item mb-1"><a href="#" class="foot-link nav-link p-0 text-body-secondary">Agri IOT</a></li>
-        </ul>
-      </div>
-
-      <div class="col-lg-2 col-md-6 col-sm-12 mb-3">
-        <h5>PRODUCTS</h5>
-        <ul class="nav flex-column">
-          <li class="nav-item mb-1"><a href="#" class="foot-link nav-link p-0 text-body-secondary">RTMS</a></li>
-          <li class="nav-item mb-1"><a href="#" class="foot-link nav-link p-0 text-body-secondary">TMS</a></li>
-          <li class="nav-item mb-1"><a href="#" class="foot-link nav-link p-0 text-body-secondary">BMS</a></li>
-        </ul>
-      </div>
-
-      <div class="col-lg-6 col-md-12 mb-3" style="width: 100vh;">
-        <div class="" style="position: relative; bottom: 15px;">
-          <h5>Contact Us</h5>
-          <p style="font-weight: 600;">India</p>
-          <p>#46, ATT Colony, Coimbatore. TN – 641 018.<br>T: +91 6383308918<br>E: info@scomodetech.com</p>
-        </div>
-
-        <form>
-          <h5>Subscribe to our newsletter</h5>
-          <p>Monthly digest of what's new and exciting from us.</p>
-          <div class="d-flex flex-column flex-sm-row w-100 gap-2">
-            <label for="newsletter1" class="visually-hidden">Email address</label>
-            <input id="newsletter1" type="text" class="form-control" placeholder="Email address">
-            <button class="btn btn-primary" type="button">Subscribe</button>
+      <div class="col-lg-4 col-md-12 mb-3" style="width: 100vh; position: relative; bottom: 15px;">
+        <h5>FEEDBACK FORM</h5>
+        <form action="" method="post">
+          <div class="form-floating">
+            <input type="email" class="form-control" id="floatingEmail" placeholder="name@example.com">
+            <label for="floatingEmail">Email address</label>
           </div>
+          <div class="form-floating">
+            <input type="text" class="form-control" id="floatingFeedback" placeholder="Feedback">
+            <label for="floatingFeedback">Feedback</label>
+          </div>
+
+          <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+
         </form>
       </div>
     </div>
