@@ -106,6 +106,29 @@ h2{
 
 
 
+/* About */
+
+#about {
+  width: 66%;
+  margin: 0 17%;
+  padding: 30px;
+  padding-top: 100px;
+}
+.abt-img{
+  border-radius: 50%;
+  margin-bottom: 30px;
+  width: 225px;
+  -o-object-fit: cover;
+  object-fit: cover;
+  filter: drop-shadow(4px 4px 5px #0c1012);
+}
+.abt-text{
+  color: #959595;
+}
+
+
+
+
 
 /* Industries */
 
