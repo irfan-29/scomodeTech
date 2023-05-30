@@ -233,7 +233,6 @@ perspective-origin: top;
   margin: 0 auto;
   top: 80px;
   transform-style: preserve-3d;
-  //border: 1px solid blue;
   > div {
     display: flex;
     flex-direction: column;
@@ -276,7 +275,7 @@ perspective-origin: top;
       /* background: linear-gradient(-45deg, #23a6d5, #23d5ab); */
       background-color: #23a6d5;
       color: #fff;
-      a { */
+      /* a {
         box-shadow: rgba(0, 0, 0, 0.7) 0px 15px 50px 2px;
         &:hover,
         &:focus {
@@ -285,7 +284,7 @@ perspective-origin: top;
         &:active {
           box-shadow: none;
         }
-      }
+      } */
     }
   }
 }
