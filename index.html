@@ -65,12 +65,31 @@
 
 <body>
   <section class="animated-top">
-    <div class="d-flex flex-column justify-content-center w-100 h-100">
+    <!-- <div class="d-flex flex-column justify-content-center w-100 h-100">
       <div class="container">
         <div class="row">
-          <div class="col-lg-6 col-md-12 col-sm-12">
+          <div class="col-lg-5 col-md-12 col-sm-12">
             <h2><span class="auto-input"></span></h2>
           </div>
+          <div class="col-lg-7 col-md-12 col-sm-12">
+            <video width="100%" controls autoplay>
+              <source src="videos/scomode.mp4" type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          </div>
+        </div>
+      </div>
+    </div> -->
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-5 col-md-12 col-sm-12">
+          <h2><span class="auto-input"></span></h2>
+        </div>
+        <div style="border-width: 5px;" class="col-lg-7 col-md-12 col-sm-12">
+          <video width="100%" autoplay muted loop style="border: 5px;">
+            <source src="videos/scomode.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+          </video>
         </div>
       </div>
     </div>
@@ -84,6 +103,7 @@
       backSpeed: 100,
       loop: false
     });
+
   </script>
 
 
@@ -95,27 +115,58 @@
     <h1>INDUSTRIES</h1>
     <div class="industry-container">
       <div class="ind">
-        <a href="#telecom"><img class="ind-img" src="images/telecom.jpeg" /></a>
+        <div class="ind-out-img">
+          <a href="#telecom"><img class="ind-img" src="images/telecom.jpeg" /></a>
+        </div>
         <h5 class="ind-text">TELECOM</h5>
       </div>
+
       <div class="ind">
-      <a href="#power"><img class="ind-img" src="images/power.jpeg" /></a>
+        <div class="ind-out-img">
+          <a href="#power"><img class="ind-img" src="images/power.jpeg" /></a>
+        </div>
         <h5 class="ind-text">POWER</h5>
       </div>
+
       <div class="ind">
-      <a href="#mining"><img class="ind-img" src="images/mining.jpg" /></a>
+        <div class="ind-out-img">
+          <a href="#mining"><img class="ind-img" src="images/mining.jpg" /></a>
+        </div>
         <h5 class="ind-text">MINING</h5>
       </div>
+
       <div class="ind">
-      <a href="#smart_city"><img class="ind-img" src="images/smart_city.jpeg" /></a>
-        <h5 class="ind-text">SMART CITY</h5>
+        <div class="ind-out-img">
+        <a href="#smart-city"><img class="ind-img" src="images/smart_city.jpeg" /></a>
       </div>
-      <div class="ind">
-      <a href="#retail"><img class="ind-img" src="images/retail.jpg" /></a>
-        <h5 class="ind-text">RETAIL</h5>
+      <h5 class="ind-text">SMART CITY</h5>
+    </div>
+
+    <div class="ind">
+      <div class="ind-out-img">
+        <a href="#retail"><img class="ind-img" src="images/retail.jpg" /></a>
       </div>
+      <h5 class="ind-text">RETAIL</h5>
+    </div>
+
+    <div class="ind">
+      <div class="ind-out-img">
+        <a href="#oil-gas"><img class="ind-img" src="images/oil-gas.png" /></a>
+      </div>
+      <h5 class="ind-text">OIL & GAS</h5>
+    </div>
+
+    <div class="ind">
+      <div class="ind-out-img">
+        <a href="#agri"><img class="ind-img" src="images/agri.jpg" /></a>
+      </div>
+      <h5 class="ind-text">AGRI IOT</h5>
+    </div>
+
     </div>
   </section>
+
+
   <section id="ind-detail" style="width: 100%;">
     <div id="telecom" class="row" style="width: 84%; margin: 5% 8%;">
       <div class="col-lg-6 col-md-12" style="display: flex; justify-content: center; align-items: center;">
@@ -129,7 +180,8 @@
         <br>
         <h4 style="font-weight: 700;">Solutions</h4>
         <h4>Remote Tower Management System</h4>
-        <p>Remote Tower Management System is a comprehensive remote IOIT based Telecom Tower Monitoring Solution. The system can monitor remote devices of various types and interfaces configured via Scomode’s IOIT platform. RTMS can be interfaced with analog or digital sensors and configured for various operational and monitoring control.<br>
+        <p>Remote Tower Management System is a comprehensive remote IOIT based Telecom Tower Monitoring Solution. The system can monitor remote devices of various types and interfaces configured via Scomode’s IOIT platform. RTMS can be interfaced
+          with analog or digital sensors and configured for various operational and monitoring control.<br>
           RTMS system has provision to take a decision in the case of emergency depending on the configurations and pattern history. RTMS has the capacity to learn the critical system components and become intelligent over a period of time</p>
       </div>
     </div>
@@ -141,15 +193,18 @@
         <h4 style="font-weight: 700;">Challenges</h4>
         <p>• Digital immaturity<br>• A variety of distributed systems, lack of a common consolidation platform<br>Lack of methodical control on distribution, consumption, leakage, energy accounting & demand forecasting
           <br>• Poor consumer energy planning due to lack of visibility on usage, peak and lean hour charges<br>• Remote site locations – high lead time for maintenance.<br>• Expensive hardware<br>• High downtime impact
-          <br>• Increasing cost of hardware maintenance.<br>• Increasing cost of skilled manpower.<br>• Security and safety of assets at remote sites.<br>• The necessity to achieve high output with reduced operation cost.</p>
+          <br>• Increasing cost of hardware maintenance.<br>• Increasing cost of skilled manpower.<br>• Security and safety of assets at remote sites.<br>• The necessity to achieve high output with reduced operation cost.
+        </p>
         <br>
         <h4 style="font-weight: 700;">Solutions</h4>
         <h4>Smart Grid Management Solution</h4>
-        <p>Scomode Smart Grid Management Solution connects with power grids, substations, solar power stations to monitor equipment like transformers, turbines and other critical equipment to capture device specific operational data like bushing parameters, electrical parameters, temperature, Oil levels, Gas levels, fuel levels etc. The data is then transferred to Scomode’s cloud SGMS platform to monitor, control and define operational activities centrally</p>
+        <p>Scomode Smart Grid Management Solution connects with power grids, substations, solar power stations to monitor equipment like transformers, turbines and other critical equipment to capture device specific operational data like bushing
+          parameters, electrical parameters, temperature, Oil levels, Gas levels, fuel levels etc. The data is then transferred to Scomode’s cloud SGMS platform to monitor, control and define operational activities centrally</p>
         <h4>Advanced Metering Infrastructure</h4>
         <p>AMI completes the power supply chain digitization circle by seamlessly integrating with SGMS. Advanced Metering Infrastructure (AMI) takes greater control over energy costs and a more reliable energy supply for consumers.
 
-Energy meter helps utilities to have a track of how much energy is been distributed from the grid and consumed at the endpoint. This, in turn, enables precise energy accounting, demand forecasting and streamlining grid operations. Smart metering enables consumers to get energy info from utilities on their usage pattern and peak hour pricing. This also helps them inefficient billing and energy planning.</p>
+          Energy meter helps utilities to have a track of how much energy is been distributed from the grid and consumed at the endpoint. This, in turn, enables precise energy accounting, demand forecasting and streamlining grid operations. Smart
+          metering enables consumers to get energy info from utilities on their usage pattern and peak hour pricing. This also helps them inefficient billing and energy planning.</p>
 
       </div>
       <div class="col-lg-6 col-md-12" style="display: flex; justify-content: center; align-items: center;">
@@ -171,24 +226,27 @@ Energy meter helps utilities to have a track of how much energy is been distribu
         <br>
         <h4 style="font-weight: 700;">Solutions</h4>
         <h4>Remote Tower Management System</h4>
-        <p>Remote Tower Management System is a comprehensive remote IOIT based Telecom Tower Monitoring Solution. The system can monitor remote devices of various types and interfaces configured via Scomode’s IOIT platform. RTMS can be interfaced with analog or digital sensors and configured for various operational and monitoring control.<br>
+        <p>Remote Tower Management System is a comprehensive remote IOIT based Telecom Tower Monitoring Solution. The system can monitor remote devices of various types and interfaces configured via Scomode’s IOIT platform. RTMS can be interfaced
+          with analog or digital sensors and configured for various operational and monitoring control.<br>
           RTMS system has provision to take a decision in the case of emergency depending on the configurations and pattern history. RTMS has the capacity to learn the critical system components and become intelligent over a period of time</p>
       </div>
     </div>
 
     <hr style="width: 86%; margin: 0 7%;">
 
-    <div id="smart_city" class="row" style="width: 84%; margin: 5% 8%;">
+    <div id="smart-city" class="row" style="width: 84%; margin: 5% 8%;">
       <div class="col-lg-6 col-md-12" style="text-align: left; line-height: 2.2;">
         <h4 style="font-weight: 700;">Challenges</h4>
         <p>• Large distributed hardware network, lack of common gateway to integrate all<br>• Never ending demand of infrastructure to process increasing volumes of structured and unstructured data
           <br>• Large complexity to integrate various monitoring systems like power distribution, water distribution, traffic management & building management to build a unified smart city platform.
           <br>• Complex Man, Machine & Methods data model<br>• Need of shorter data processing turn around time for efficient and effective systems<br>• High impact of system downtime
-          <br>• Vast and distributed maintenance perimeter</p>
+          <br>• Vast and distributed maintenance perimeter
+        </p>
         <br>
         <h4 style="font-weight: 700;">Solutions</h4>
         <h4>Building Management Solution</h4>
-        <p>BMS is a comprehensive home, building, office & warehouse management solution. With a network of smart gateways, BMS helps manage and monitor building temperature, power consumption patterns, environmental parameters, demand response, safety & fire alarms, failure detection and early warning systems. It also enables smart offices to enhance their occupant experience, asset and ROI management, Staff productivity management, meeting room and productivity scheduling.</p>
+        <p>BMS is a comprehensive home, building, office & warehouse management solution. With a network of smart gateways, BMS helps manage and monitor building temperature, power consumption patterns, environmental parameters, demand response,
+          safety & fire alarms, failure detection and early warning systems. It also enables smart offices to enhance their occupant experience, asset and ROI management, Staff productivity management, meeting room and productivity scheduling.</p>
       </div>
       <div class="col-lg-6 col-md-12" style="display: flex; justify-content: center; align-items: center;">
         <h1>SMART CITY</h1>
@@ -204,11 +262,14 @@ Energy meter helps utilities to have a track of how much energy is been distribu
       <div class="col-lg-6 col-md-12" style="text-align: left; line-height: 2.2;">
         <h4 style="font-weight: 700;">Challenges</h4>
         <p>• Increasing shift of market share to online stores.<br>• Retain and grow customer base<br>• Meet increasing customer demand for shopping experience and choices.
-          <br>• Reducing profit margins, increasing pilferage<br>• Increasing cost of skilled manpower<br>• Arriving at the right formula to optimize shelf space utilization</p>
+          <br>• Reducing profit margins, increasing pilferage<br>• Increasing cost of skilled manpower<br>• Arriving at the right formula to optimize shelf space utilization
+        </p>
         <br>
         <h4 style="font-weight: 700;">Solutions</h4>
         <h4>Enhanced Customer Experience Platform</h4>
-        <p>Enhanced Customer Experience Platform enables retailers to drive customer shopping patterns, product sales patterns, shelf space utilization patterns, cross selling and up selling combinations. This helps to enhance customer experience, revenue, the reduction is pilferage, customer base and ability to drive customer satisfaction time and again. Operational efficiency can also be achieved as valuable data is collected by using a network of smart electronic shelf labels installed in the stores.</p>
+        <p>Enhanced Customer Experience Platform enables retailers to drive customer shopping patterns, product sales patterns, shelf space utilization patterns, cross selling and up selling combinations. This helps to enhance customer experience,
+          revenue, the reduction is pilferage, customer base and ability to drive customer satisfaction time and again. Operational efficiency can also be achieved as valuable data is collected by using a network of smart electronic shelf labels
+          installed in the stores.</p>
       </div>
     </div>
   </section>
@@ -220,7 +281,7 @@ Energy meter helps utilities to have a track of how much energy is been distribu
     <h3>Synchronized Control and Monitoring of Devices Platform.</h3>
     <p>A fully configurable middleware IOiT Operating system delivered as a platform, enabling a variety of IOT devices to get connected with standard or customized protocols, codecs and standards with utmost data handling efficiency and accuracy.
     </p>
-    <video width="100%" controls>
+    <video width="100%" controls autoplay>
       <source src="videos/scomode.mp4" type="video/mp4">
       Your browser does not support the video tag.
     </video>
