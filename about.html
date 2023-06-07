@@ -23,13 +23,24 @@
             <a class="nav-link" aria-current="page" href="./about.html">ABOUT US</a>
           </li>
           <li class="nav-item">
+            <a class="nav-link" aria-current="page" href="./index.html">HOME</a>
+          </li>
+          <li class="nav-item">
             <a class="nav-link" href="./index.html#industry">INDUSTRIES</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="./index.html#technology">TECHNOLOGIES</a>
           </li>
-          <li class="nav-item">
-            <a class="nav-link" href="/products.html">PRODUCTS</a>
+          <li class="nav-item dropdown">
+            <a class="nav-link dropdown-toggle" role="button" data-bs-toggle="dropdown">PRODUCTS</a>
+            <ul class="dropdown-menu">
+              <li><a class="dropdown-item" href="./products.html">Products</a></li>
+              <li><hr class="dropdown-divider"></li>
+              <li><a class="dropdown-item" href="./products.html#rtms">RTMS</a></li>
+              <li><a class="dropdown-item" href="./products.html#tms">TMS</a></li>
+              <li><a class="dropdown-item" href="./products.html#bms">BMS</a></li>
+              <li><a class="dropdown-item" href="./products.html#robotix&tactix">RobotiX & TactiX</a></li>
+            </ul>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="#footer">CONTACT US</a>
@@ -51,9 +62,9 @@
 
       <img class="abt-img" src="images/about/arun-arumugam.png" />
       <h4 style="font-weight: 700; margin-top: 10px;">Arun Arumugam</h4>
-      <h5 style="font-weight: 700; color: #23a6d5">Founder and CEO</h5>
+      <h5 style="font-weight: 700;">Founder and CEO</h5>
       <br>
-      <p class="abt-text">Arun has been a Technocrat from his age of 15 and had worked with various institutions and R & D labs.  During this period Arun has invented some major breakthrough technology in Software Cloning, Organic Cell computing and optical data processing.<br><br>
+      <p>Arun has been a Technocrat from his age of 15 and had worked with various institutions and R & D labs.  During this period Arun has invented some major breakthrough technology in Software Cloning, Organic Cell computing and optical data processing.<br><br>
          Arun holds a Bachelor Degree in Information Technology from Anna University Chennai with 10+ years of IT experience as Team Player, Project lead, Director in Planning, Architecture & Design, Software/Hardware Development, Operational Processes, Roll Out, Requirement analysis, and Project Management.
          Arun decided to set the vision of making an Intelligent planet and has been implementing systems with human like intelligence.<br><br>
          Arun has dedicated himself towards creating a world renowned multibillion global enterprise which can touch each and every ones life through technology and intelligence.<br>
@@ -61,9 +72,9 @@
 
       <img class="abt-img" style="margin-top: 40px;"src="images/about/Selvakumar.png" />
       <h4 style="font-weight: 700; margin-top: 10px;">Dr. Selvakumar Arumugam</h4>
-      <h5 style="font-weight: 700; color: #23a6d5">Co-Founder and President</h5>
+      <h5 style="font-weight: 700;">Co-Founder and President</h5>
       <br>
-      <p class="abt-text">Dr. Selvakumar Arumugam , currently the President of Scomode, is a Serial Entrepreneur, Mentor, early-stage Investor and an Academician. He is passionate about supporting Start-ups based out of rural and tier-2 towns. Trusted Partner with a demonstrated history of adding value for over 20 years in the IT Industry and Academia.<br><br>
+      <p>Dr. Selvakumar Arumugam , currently the President of Scomode, is a Serial Entrepreneur, Mentor, early-stage Investor and an Academician. He is passionate about supporting Start-ups based out of rural and tier-2 towns. Trusted Partner with a demonstrated history of adding value for over 20 years in the IT Industry and Academia.<br><br>
         Has strong R&D experience in Academia and Defence establishments. Has a Ph.D. in Mechanical Engineering from Concordia University, Montreal, Canada.<br><br>
         And served as Joint-Correspondent of Kumaraguru College of Technology at Coimbatore and built a strong Industry-Institute collaborative culture for over a decade. Has served as the President of TiE Coimbatore and currently serving as a member of the Governing Council. Has served as the President of Computer Society of India, Coimbatore chapter and recognised as a Patron by Computer Society of India nationally. Headed the Academic Initiatives of both CII Coimbatore chapter as well as the CII South Zone. Setup the first state of the art IT Park and Tier-3 data centre at Coimbatore in 2010.<br><br>
         Presently working on establishing a next generation ecosystem by bringing together cutting-edge technologies and modern processes, that would help businesses in this region to smoothly transition in to and adopt themselves in Digital economy and thrive on the emerging opportunities.<br><br>
@@ -97,16 +108,36 @@
             <label for="floatingFeedback">Feedback</label>
           </div>
 
-          <button class="w-100 btn btn-lg btn-primary" type="submit">Submit</button>
+          <button class="w-100 btn btn-lg btn-primary btn-submit" type="submit">Submit</button>
 
         </form>
       </div>
     </div>
 
-    <div class="d-flex border-top">
-      <p style="position: relative; top: 15px;"> © 2023 Scomode Technologies, Inc. All rights reserved.</p>
+    <div class="d-flex border-top" style="background-color: #c0c0c0; position: relative; top: 15px;">
+      <p style="padding-bottom: 15px; position: relative; top: 15px; left: 10px;"> © 2023 Scomode Technologies, Inc. All rights reserved.</p>
     </div>
   </footer>
+
+  <button onclick="topFunction()" id="myBtn" title="Go to Top"><img src="images/arrow.png" style="width: 20px;"></button>
+
+  <script type="text/javascript">
+    let mybutton = document.getElementById("myBtn");
+    window.onscroll = function() {
+      scrollFunction()
+    };
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+  </script>
 
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
