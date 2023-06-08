@@ -288,6 +288,7 @@ img {
 }
 .work-para {
   font-size: 16px;
+  line-height: 1.5;
 }
 .work-para-no {
   position: relative;
@@ -373,14 +374,12 @@ img {
     height: 500px;
     perspective: 600px;
     perspective-origin: top;
-
     .inner-carousel {
       position: relative;
       width: 265px;
       margin: 0 auto;
       top: 80px;
       transform-style: preserve-3d;
-
       >div {
         display: flex;
         flex-direction: column;
@@ -398,7 +397,6 @@ img {
         transition: all .5s ease-out;
         z-index: 1;
         box-shadow: rgba(0, 0, 0, 0.7) 0px 15px 30px 2px;
-
         &:after {
           content: '';
           position: absolute;
@@ -411,17 +409,14 @@ img {
           background-color: #ddd;
           z-index: 1;
         }
-
         &.counterclockwise:after,
         &.clockwise:after {
           opacity: .4;
           cursor: pointer;
         }
-
         &.front:after {
           content: none;
         }
-
         &.front {
           background-color: #A259E8;
           color: #fff;
