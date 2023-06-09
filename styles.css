@@ -2,7 +2,7 @@
 
 .img-logo{
   text-decoration: none;
-  padding-right: 12px; 
+  padding-right: 12px;
   margin: 0;
 }
 
@@ -354,6 +354,9 @@ img {
       /* margin: 3% 3%; */
       padding: 60px 30px;
   }
+  #rtms, #tms, #bms, #robo-tac{
+    width: 100%;
+  }
 
   h1{
     font-size: 1.75rem;
@@ -396,6 +399,9 @@ img {
   .card-carousel{
     display: none;
     visibility: hidden;
+  }
+  .form-control, .btn{
+    margin-left: 10px;
   }
 }
 
