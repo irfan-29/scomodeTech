@@ -1,9 +1,10 @@
 /* Navbar */
 
-.img-logo{
-  text-decoration: none;
-  padding-right: 12px;
-  margin: 0;
+.logo-img{
+  height: 55px;
+  color: white;
+  float: left;
+  padding-right: 5px;
 }
 
 .container-fluid {
