@@ -360,7 +360,7 @@ img {
   }
 
   h1{
-    font-size: 1.75rem;
+    font-size: 1.7rem;
   }
 
   h2{
@@ -393,7 +393,7 @@ img {
     margin: 0;
   }
 
-  .tech-cont, .working, .ind-cont, .features, .benefits {
+  #about, .tech-cont, .working, .ind-cont, .features, .benefits {
     width: 96%;
     margin: 2%;
   }
@@ -407,6 +407,7 @@ img {
   .form-control, .btn{
     margin-left: 10px;
   }
+
 }
 
 /* Small devices (portrait tablets and large phones, 600px and up) */
